@@ -7,7 +7,7 @@ gem 'sqlite3'
 gem 'sass-rails', '~> 3.1.0'
 gem 'coffee-rails'
 
-#gem 'dynamic_form'
+gem 'dynamic_form'
 
 #gem 'devise', '1.4.9'
 #gem 'cancan'
