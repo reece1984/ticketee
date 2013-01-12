@@ -9,7 +9,7 @@ gem 'coffee-rails'
 
 gem 'dynamic_form'
 
-#gem 'devise', '1.4.9'
+gem 'devise', '1.4.9'
 #gem 'cancan'
 
 #gem 'paperclip'
