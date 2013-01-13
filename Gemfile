@@ -25,6 +25,11 @@ gem 'jquery-rails'
 
 #gem 'sinatra'
 
+group :assets do
+  gem 'uglifier'
+  gem 'therubyracer'
+end
+
 group :test, :development do
   #gem 'gmail'
   gem 'rspec-rails', '~> 2.6'
