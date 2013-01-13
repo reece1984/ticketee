@@ -33,7 +33,7 @@ end
 group :test do
   #gem 'rack-test'
   gem 'cucumber-rails', '1.0.6'
-  gem 'capybara'
+  gem 'capybara', '1.1.2'
   gem 'database_cleaner'
   gem 'factory_girl', '1.3.3'
   gem 'email_spec'

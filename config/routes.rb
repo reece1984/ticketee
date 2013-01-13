@@ -1,6 +1,10 @@
 Ticketee::Application.routes.draw do
 
-  devise_for :users
+
+  devise_for :users, :controllers => { :registrations => "registrations" }
+  get '/awaiting_confirmation', 
+    :to => "users#confirmation", 
+    :as => 'confirm_user' # this means that I would like the helper confirm_user_path for this route
 
   root :to => "projects#index"
 
