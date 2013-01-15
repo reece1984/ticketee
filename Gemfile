@@ -12,7 +12,7 @@ gem 'dynamic_form'
 gem 'devise', '1.4.9'
 gem 'cancan'
 
-#gem 'paperclip'
+gem 'paperclip'
 
 #gem 'searcher'
 #gem 'kaminari'
