@@ -1,4 +1,13 @@
 <div id='ticket'>
+  <div id = 'watchers'>
+  	<%= toggle_watching_button %>
+  	<h4>Watchers</h4>
+  	<ul>
+  		<% @ticket.watchers.each do |watcher| %>
+  		  <li><%= watcher %></li>
+  		  <% end %>
+  		</ul>
+  </div>
 	<h2><%=@ticket.title %></h2>
 	<br><small>Created by <%= @ticket.user.email %></small>
 	<%= render @ticket.state if @ticket.state %>
