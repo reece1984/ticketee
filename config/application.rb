@@ -48,5 +48,7 @@ module Ticketee
     # Devise told me to add this
     config.assets.initialize_on_precompile = false
 
+    # page 316 of rails 3 in action told me to add this
+    config.active_record.observers = :comment_observer
   end
 end
