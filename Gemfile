@@ -31,7 +31,7 @@ group :assets do
 end
 
 group :test, :development do
-  #gem 'gmail'
+  gem 'gmail'
   gem 'rspec-rails', '~> 2.6'
   gem 'sqlite3'
 end
