@@ -11,6 +11,10 @@ before_filter :find_project, :only => [:show, :edit, :update, :destroy]
 		@projects = Project.for(current_user).all
 	end
 
+	def show
+		@tickets = @project.tickets
+	end
+
 	def new
 		@project = Project.new
 	end
@@ -24,10 +28,6 @@ before_filter :find_project, :only => [:show, :edit, :update, :destroy]
 			flash[:alert] = "Project has not been created."
 			render :action => "new"
 		end
-	end
-
-	def show
-
 	end
 
 	def edit

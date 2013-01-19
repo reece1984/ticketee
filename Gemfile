@@ -14,7 +14,7 @@ gem 'cancan'
 
 gem 'paperclip'
 
-#gem 'searcher'
+gem 'searcher'
 #gem 'kaminari'
 
 gem 'jquery-rails'
