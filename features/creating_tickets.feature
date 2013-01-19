@@ -9,6 +9,7 @@ I want to be able to slect a project and do that
 			| email                | password   |
 			| user@ticketee.com    | password   |
 		And "user@ticketee.com" can view the "Internet Explorer" project
+		And "user@ticketee.com" can tag the "Internet Explorer" project
 		And "user@ticketee.com" can create tickets in the "Internet Explorer" project
 		And I am signed in as them
 		And I am on the homepage
@@ -49,6 +50,7 @@ I want to be able to slect a project and do that
 		When I follow "speed.txt"
 
 	Scenario: Creating a ticket with tags
+	Given "user@ticketee.com" can change states on the "Internet Explorer" project
 	When I fill in "Title" with "Non-standards compliance"
 	And I fill in "Description" with "My pages are ugly!"
 	And I fill in "Tags" with "browser visual"
